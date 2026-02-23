@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Castellanos | Ingeniería Electrónica</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #77aca2, #468189);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f3c88, #162447);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        nav {
+            background: #0f3057;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f9b17a;
+        }
+
+        section {
+            padding: 40px;
+            margin: 30px auto;
+            width: 85%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            animation: fadeUp 1s ease-in-out;
+        }
+
+        h2 {
+            color: #1f3c88;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .contenido-flex {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contenido-flex img {
+            width: 250px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .contenido-flex img:hover {
+            transform: scale(1.05);
+        }
+
+        .imagenes-extra {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .imagenes-extra img {
+            width: 250px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .imagenes-extra img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #f4e9cd;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .media-container {
+            text-align: center;
+        }
+
+        audio, video, iframe {
+            margin-top: 20px;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                width: 95%;
+                padding: 25px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Miguel Castellanos Ramírez</h1>
+    <p style="text-align:center">Bienvenido a mi página personal</p>
+</header>
+
+<nav>
+    <a href="#descripcion">Descripción</a>
+    <a href="#familia">Familia</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#musica">Música</a>
+    <a href="#videos">Videos</a>
+</nav>
+
+<section id="descripcion">
+    <h2>Descripción Personal</h2>
+    <div class="contenido-flex">
+        <div>
+            <p>
+                Mi nombre es Miguel Castellanos Ramirez, nací en Santiago Juxtlahuaca, Oaxaca. 
+				Actualmente estudio el octavo semestre de la carrera de Ingeniería Electrónica en el Instituto Tecnológico de Oaxaca.
+				A lo largo de mi formación universitaria he desarrollado un gran interés por las telecomunicaciones, la electrónica aplicada 
+				y los sistemas de comunicación, especialmente en temas relacionados con radiofrecuencia y microondas. <br><br> Me considero una
+				persona un poco introvertida, aunque siempre trato de socializar y mejorar en ese aspecto. Disfruto aprender cosas nuevas y asumir
+				responsabilidades, aunque reconozco que en ocasiones dejo algunas actividades para el último momento. Busco crecer tanto en lo académico
+				como en lo personal, manteniendo siempre una actitud de aprendizaje constante.
+            </p>
+        </div>
+        <img src="foto.jpeg" alt="Foto personal">
+    </div>
+</section>
+
+<section id="familia">
+    <h2>Mi Familia</h2>
+    <p>
+        Mi familia está conformada por cinco integrantes: mis padres, mis dos hermanos y yo, siendo el menor de los tres.
+		Desde pequeño he recibido el apoyo y la guía de mis padres, quienes me han enseñado valores como la responsabilidad,
+		el respeto y la perseverancia. <br><br> Para mí, mi familia representa una base fundamental. Son mi apoyo en momentos
+		difíciles y quienes celebran conmigo cada logro alcanzado. Amo profundamente a mi familia y considero que gran parte de
+		lo que soy hoy se debe a la formación y el ejemplo que he recibido en casa.
+    </p>
+
+    <div class="imagenes-extra">
+        <img src="familia1.jpeg" alt="Familia 1">
+        <img src="familia2.jpeg" alt="Familia 2">
+        <img src="familia3.jpeg" alt="Familia 3">
+    </div>
+</section>
+
+<section id="hobbies">
+    <h2>Mis Hobbies</h2>
+    <p>
+        Disfruto tocar guitarra, piano y bajo. También me gusta producir música y experimentar con sonidos. Además, me apasionan las motos y viajar.
+    </p>
+
+    <div class="imagenes-extra">
+        <img src="guitarra.jpg" alt="Guitarra" style="width: 350px">
+        <img src="moto.jpeg" alt="Moto">
+        <img src="moto2.jpeg" alt="Moto">
+    </div>
+</section>
+
+<section id="musica" class="media-container">
+    <h2>Mi Música Favorita</h2>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>
+        Una de mis canciones favoritas es “A Ti Sea La Gloria” de Abel Zavala, un canto que transmite adoración y gratitud.
+    </p>
+</section>
+
+<section id="videos" class="media-container">
+    <h2>Videos</h2>
+
+    <h3>Producción Musical</h3>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/IkmLC-BZedQ" 
+        frameborder="0" allowfullscreen>
+    </iframe>
+<p><br>Incluí una producción musical realizada por mí, la cual es un cover del canto “Cántico Nuevo” del grupo Inspiración
+ Llamada Final. Este proyecto representó un reto personal, ya que implicó trabajar en la grabación, edición y mezcla del audio,
+ además de la interpretación musical. <br><br> A través de esta producción pude aplicar conocimientos técnicos relacionados con 
+ grabación y edición, así como desarrollar mi creatividad musical. Este tipo de proyectos me permiten combinar mi pasión por la
+ música con habilidades técnicas, mostrando una parte importante de mis intereses personales.</p>
+    <h3 style="margin-top:30px;">Práctica de Microondas</h3>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</section>
+
+<footer>
+    © 2026 Miguel Castellanos Ramírez | Página Personal
+</footer>
+
+</body>
+</html>
